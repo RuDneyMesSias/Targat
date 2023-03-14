@@ -37,3 +37,20 @@ for linha in arq:
         print(linha)
 print('\nForam retornadas', contador, 'linhas')
 arq.close()
+
+
+
+#with open('valores_Fibo.txt', 'r') as arquivo:
+#    texto = arquivo.read()
+ #   lista_Fibo = texto.split('\n')
+
+  #  lista_Fibo = lista_Fibo[1:]
+
+   # for linha in lista_Fibo:
+    #    posicao_py = int(linha.find(','))
+
+def validador(numero):
+    if numero == numero:
+        return True
+    else:
+        return False

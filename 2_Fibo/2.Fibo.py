@@ -1,20 +1,29 @@
+
+
+
+# Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores 
+
 print('_'*30)
 print('Sequência de Fibonacci')
 
 def fib(n):
 
-    a, b = 1, 1
+    a, b = 0, 1
     while a < n:
         print(a, end ='-')
         a, b = b, a + b
 
 lista = [fib(100000)]
 
+# Informado um número, ele calcule a sequência de Fibonacci
 
 print('\n')
 print('_'*30)
 numero = int(input('Quantos termos você quer mostrar? '))
 
+
+
+# ele calcule a sequência de Fibonacci. 
 i = 1
 anterior = 1
 proximo = 1
@@ -27,30 +36,10 @@ while(i < numero):
         anterior = proximo
         proximo = next
         superior = anterior + proximo
-    #print(next)
+    print(next)
     i = i + 1
 
-
-Faturamento = 0
-
-with open('valores_Fibo.txt', 'r') as arquivo:
-    texto = arquivo.read()
-    lista_Fibo = texto.split('\n')
-
-    lista_Fibo = lista_Fibo[1:]
-
-    for linha in lista_Fibo:
-        posicao_py = int(linha.find(','))
-
-def validador(numero):
-    if numero == numero:
-        return True
-    else:
-        return False
-
-lista_Fibo = list(filter(validador, lista_Fibo))
-print(lista_Fibo)
-
+# E retorne uma mensagem avisando se o número informado pertence ou não a sequência.
 
 if numero == anterior + superior:
     print('\n Sim! O numero {} pertence a sequencia de fibonacci '.format(next))
