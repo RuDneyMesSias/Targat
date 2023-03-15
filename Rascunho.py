@@ -54,3 +54,12 @@ def validador(numero):
         return True
     else:
         return False
+
+
+arq = open('valores_Fibo.txt', 'r')
+contador = 0
+for linha in arq:
+    linha = linha.rstrip()
+    if '10' in linha:
+        contador = contador + 1
+        print(linha)

@@ -37,13 +37,22 @@ while(i < numero):
         proximo = next
         superior = anterior + proximo
     print(next)
+    break
     i = i + 1
 
 # E retorne uma mensagem avisando se o número informado pertence ou não a sequência.
 
-if numero == anterior + superior:
-    print('\n Sim! O numero {} pertence a sequencia de fibonacci '.format(next))
-else:
-    print('\n Não! O numero {} pertence a sequencia de fibonacci '.format(next))
+with open('valores_Fibo.txt', 'r',) as arquivo:
+    texto = arquivo.read()
+print(texto.split('\n'))
 
-print('\n O numero anterior de {} é {} e seu proximo numero é {}. '.format(next, anterior, superior))
+for valor in texto:
+    if numero == next:
+        print('\n Sim! O numero {} pertence a sequencia de fibonacci '.format(numero))
+else:
+    print('\n Não! O numero {} pertence a sequencia de fibonacci '.format(numero))
+
+print('\n O numero anterior de {} é {} e seu proximo numero é {}. '.format(numero, anterior, superior))
+
+
+
