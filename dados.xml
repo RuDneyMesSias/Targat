@@ -1,122 +1,128 @@
-<Faturamento coin="MONEY">
-  <dia id="1">
-      <dia>1</dia>
-      <valor>31490.7866</valor>
-  </dia>
-  <dia id="2">
+<!DOCTYPE cdfs
+[
+
+]>
+
+<faturamento>
+
+    <row id="1">
+      <dia>'1'</dia>
+      <valor>'31490.7866'</valor>
+    </row>
+    <row id="2">
       <dia>2</dia>
       <valor>37277.9400</valor>
-  </dia>
-  <dia id="3">
+    </row>
+    <row id="3">
       <dia>3</dia>
       <valor>37708.4303</valor>
-  </dia>
-  <dia id="4">
+    </row>
+    <row id="4">
       <dia>4</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="5">
+    </row>
+    <row id="5">
       <dia>5</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="6">
+    </row>
+    <row id="6">
       <dia>6</dia>
       <valor>17934.2269</valor>
-  </dia>
-  <dia id="7">
+    </row>
+    <row id="7">
       <dia>7</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="8">
+    </row>
+    <row id="8">
       <dia>8</dia>
       <valor>6965.1262</valor>
-  </dia>
-  <dia id="9">
+    </row>
+    <row id="9">
       <dia>9</dia>
       <valor>24390.9374</valor>
-  </dia>
-  <dia id="10">
+    </row>
+    <row id="10">
       <dia>10</dia>
       <valor>14279.6481</valor>
-  </dia>
-  <dia id="11">
+    </row>
+    <row id="11">
       <dia>11</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="12">
+    </row>
+    <row id="12">
       <dia>12</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="13">
+    </row>
+    <row id="13">
       <dia>13</dia>
       <valor>39807.6622</valor>
-  </dia>
-  <dia id="14">
+    </row>
+    <row id="14">
       <dia>14</dia>
       <valor>27261.6304</valor>
-  </dia>
-  <dia id="15">
+    </row>
+    <row id="15">
       <dia>15</dia>
       <valor>39775.6434</valor>
-  </dia>
-  <dia id="16">
+    </row>
+    <row id="16">
       <dia>16</dia>
       <valor>29797.6232</valor>
-  </dia>
-  <dia id="17">
+    </row>
+    <row id="17">
       <dia>17</dia>
       <valor>17216.5017</valor>
-  </dia>
-  <dia id="18">
+    </row>
+    <row id="18">
       <dia>18</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="19">
+    </row>
+    <row id="19">
       <dia>19</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="20">
+    </row>
+    <row id="20">
       <dia>20</dia>
       <valor>12974.2000</valor>
-  </dia>
-  <dia id="21">
+    </row>
+    <row id="21">
       <dia>21</dia>
       <valor>28490.9861</valor>
-  </dia>
-  <dia id="22">
+    </row>
+    <row id="22">
       <dia>22</dia>
       <valor>8748.0937</valor>
-  </dia>
-  <dia id="23">
+    </row>
+    <row id="23">
       <dia>23</dia>
       <valor>8889.0023</valor>
-  </dia>
-  <dia id="24">
+    </row>
+    <row id="24">
       <dia>24</dia>
       <valor>17767.5583</valor>
-  </dia>
-  <dia id="25">
+    </row>
+    <row id="25">
       <dia>25</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="26">
+    </row>
+    <row id="26">
       <dia>26</dia>
       <valor>0.0000</valor>
-  </dia>
-  <dia id="27">
+    </row>
+    <row id="27">
       <dia>27</dia>
       <valor>3071.3283</valor>
-  </dia>
-  <dia id="28">
+    </row>
+    <row id="28">
       <dia>28</dia>
       <valor>48275.2994</valor>
-  </dia>
-  <dia id="29">
+    </row>
+    <row id="29">
       <dia>29</dia>
       <valor>10299.6761</valor>
-  </dia>
-  <dia id="30">
+    </row>
+    <row id="30">
       <dia>30</dia>
       <valor>39874.1073</valor>
-  </dia>
-</Faturamento>
+    </row>
+</faturamento>
