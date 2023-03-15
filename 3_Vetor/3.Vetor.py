@@ -1,13 +1,12 @@
-'''3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que desejar, que calcule e retorne:
+import xml.etree.ElementTree as ET
 
-• O menor valor de faturamento ocorrido em um dia do mês;
-• O maior valor de faturamento ocorrido em um dia do mês;
-• Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
-'''
-with open('dados.xml', 'r') as arquivo:
-    dados = arquivo.readline()
-print(dados.split('/row'))
+tree = ET.parse('dados.xml')
+root = tree.getroot()
 
+id = 1 
+for dia in tree.findall('dia'):
+    dia.set('id', str(id))
+    id += 1
 
-faturamento = 0 
+tree.write('dados.xml')
 
