@@ -1,4 +1,5 @@
-'''3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um programa, na linguagem que desejar, que calcule e retorne:
+'''3) Dado um vetor que guarda o valor de faturamento diário de uma distribuidora, faça um 
+programa, na linguagem que desejar, que calcule e retorne:
 • O menor valor de faturamento ocorrido em um dia do mês;
 • O maior valor de faturamento ocorrido em um dia do mês;
 • Número de dias no mês em que o valor de faturamento diário foi superior à média mensal.
@@ -26,9 +27,13 @@ tree.white('./dados.xml')'''
 
 tree = ET.parse('.//dados.xml')
 root = tree.getroot()
+#print(ET.tostring(root))
 
 print(root)
 print(root.tag)
+
+#print(root.attrib)
+
 
 for child in root:
     print(child.attrib, child.text)
@@ -37,38 +42,14 @@ for child in root:
 print(root[3][1].text)
 
 
-
-
-
-
-
-
 '''
-
-for child in root:
-    print(child.tag, child.attrib)
 
 #Display classe in ET module
 
 for (name, member) in getmembers(ET, isclass):
     if name.startswith('_'):
 
-
 #Display functions in ET module
 
 for (name, member) in getmembers(ET, isfunction):
     if name.startswith('_'):'''
-
-
-'''tree = ET.parse('.//dados.xml')
-root = tree.getroot()
-
-
-print(root.tag)
-print(root.attrib)
-
-
-tree = ET.parse('dados.xml')
-root = tree.getroot()
-print(ET.tostring(root))'''
-
