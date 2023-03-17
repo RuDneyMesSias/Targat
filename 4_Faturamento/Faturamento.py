@@ -8,6 +8,8 @@ Outros – R$19.849,53
 
 Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.'''
 
+from decimal import Decimal
+
 valor_Total = {
 
     'SP': 67.83643,
@@ -21,20 +23,23 @@ valor_Total = {
 print('\n O faturamento total por estados listados é de :\n {}\n'.format(valor_Total))
 print('_'*50)
 
+
 for faturamento in valor_Total:
-    r = valor_Total[faturamento]
+    pertual = valor_Total[faturamento] / 100
+    
+    print(f'\n faturamento dos estados é: {pertual:.2f} %')
 
-    receita = f'R${r:_.6f}'
-    receita = receita.replace('_','.')
-
-    print(f'receita:{receita}')
 
 soma = 0
 
 for estado in valor_Total.values():
     soma = soma + estado
 
-    valor = f'R${soma:_.6f}'
+    valor = f'R$ {soma:_.3f}'
     valor = valor.replace('_','.')
 
-print(f"\n A soma é igual: {valor}")
+
+print('_'*50)
+print(f"\n somados é igual: {valor}")
+print('_'*50)
+
