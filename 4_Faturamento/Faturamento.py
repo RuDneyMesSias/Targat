@@ -39,7 +39,7 @@ for estado in valor_Total.values():
     valor = f'R$ {soma:_.5f}'
     receita = valor.replace('_','.')
 
-
+    print( receita)
 y = re.findall(r'\d+\.\d+', receita)
 receita_float = float(y[0])
 
@@ -47,7 +47,7 @@ a = receita_float / receita_float
 b = a * 100
 
 
-print(f'\n A soma dos faturamento total:  {receita_float} \n percentualmente: {b:.2f} %')
+print(f'\n A soma dos faturamento total:  R${receita_float} \n percentualmente: {b:.2f} %')
 print('_'*85)
 print('_'*85)
 
