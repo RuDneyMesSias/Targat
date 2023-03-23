@@ -15,44 +15,37 @@ from decimal import Decimal
 import xml.dom.minidom
 import xml.etree.ElementTree as ET
 
-
 mytree = ET.parse('people.xml')
 myroot = mytree.getroot()
-
 
 print('_'*85)
 print('_'*85)
 print('\n')
 
-
 contador = 0
+
 for x in myroot.findall('person'):
+
     dia = x.find('dia').text
     valor = x.find('valor').text
-    re = valor.replace('_','.')
 
-    print('Faturamento do dia: ',dia, f' R$: { valor:.7}')
-    valor = valor.replace('_','.')
+
+    re = float(valor)
+    b = (f'R$ {re:_.2f}')
+    cont = (b.replace('_','.').replace(',','.'))
+    print('O faturamento do {} foi igual: {}'.format(dia, cont))
+    
+print(max(cont))
 
 soma = 0
-re = float(valor)
 
-for estado in valor:
+for group in valor:
     soma = soma + re
     valor = f'R$ {soma:_.2f}'
-    receita = valor.replace('_','.')
-
-    if receita == valor:
-        med = receita / valor
-        print(med)
+    receita = (valor.replace('_','.').replace(',','.'))    
 
 print('_'*85)
 print('_'*85)
 print('\n Faturamento Total : {}\n'.format(receita))
 print('_'*85)
-
-
-        
-
-
 
