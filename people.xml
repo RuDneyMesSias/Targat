@@ -1,128 +1,123 @@
-<!DOCTYPE cdfs
-[
-
-]>
-
-<faturamento>
-
-    <row id="1">
-      <dia>'1'</dia>
-      <valor>'31490.7866'</valor>
-    </row>
-    <row id="2">
+<?xml version="1.0" encoding='UTF-8'?>
+<group>
+    <person id="1">
+      <dia>1</dia>
+      <valor>31490.7866</valor>
+    </person >
+    <person id="2">
       <dia>2</dia>
       <valor>37277.9400</valor>
-    </row>
-    <row id="3">
+    </person >
+    <person id="3">
       <dia>3</dia>
       <valor>37708.4303</valor>
-    </row>
-    <row id="4">
+    </person >
+    <person id="4">
       <dia>4</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="5">
+    </person >
+    <person id="5">
       <dia>5</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="6">
+    </person >
+    <person id="6">
       <dia>6</dia>
       <valor>17934.2269</valor>
-    </row>
-    <row id="7">
+    </person >
+    <person id="7">
       <dia>7</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="8">
+    </person >
+    <person id="8">
       <dia>8</dia>
       <valor>6965.1262</valor>
-    </row>
-    <row id="9">
+    </person >
+    <person id="9">
       <dia>9</dia>
       <valor>24390.9374</valor>
-    </row>
-    <row id="10">
+    </person >
+    <person id="10">
       <dia>10</dia>
       <valor>14279.6481</valor>
-    </row>
-    <row id="11">
+    </person >
+    <person id="11">
       <dia>11</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="12">
+    </person >
+    <person id="12">
       <dia>12</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="13">
+    </person >
+    <person id="13">
       <dia>13</dia>
       <valor>39807.6622</valor>
-    </row>
-    <row id="14">
+    </person >
+    <person id="14">
       <dia>14</dia>
       <valor>27261.6304</valor>
-    </row>
-    <row id="15">
+    </person >
+    <person id="15">
       <dia>15</dia>
       <valor>39775.6434</valor>
-    </row>
-    <row id="16">
+    </person >
+    <person id="16">
       <dia>16</dia>
       <valor>29797.6232</valor>
-    </row>
-    <row id="17">
+    </person >
+    <person id="17">
       <dia>17</dia>
       <valor>17216.5017</valor>
-    </row>
-    <row id="18">
+    </person >
+    <person id="18">
       <dia>18</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="19">
+    </person >
+    <person id="19">
       <dia>19</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="20">
+    </person >
+    <person id="20">
       <dia>20</dia>
       <valor>12974.2000</valor>
-    </row>
-    <row id="21">
+    </person >
+    <person id="21">
       <dia>21</dia>
       <valor>28490.9861</valor>
-    </row>
-    <row id="22">
+    </person >
+    <person id="22">
       <dia>22</dia>
       <valor>8748.0937</valor>
-    </row>
-    <row id="23">
+    </person >
+    <person id="23">
       <dia>23</dia>
       <valor>8889.0023</valor>
-    </row>
-    <row id="24">
+    </person >
+    <person id="24">
       <dia>24</dia>
       <valor>17767.5583</valor>
-    </row>
-    <row id="25">
+    </person >
+    <person id="25">
       <dia>25</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="26">
+    </person >
+    <person id="26">
       <dia>26</dia>
       <valor>0.0000</valor>
-    </row>
-    <row id="27">
+    </person >
+    <person id="27">
       <dia>27</dia>
       <valor>3071.3283</valor>
-    </row>
-    <row id="28">
+    </person >
+    <person id="28">
       <dia>28</dia>
       <valor>48275.2994</valor>
-    </row>
-    <row id="29">
+    </person >
+    <person id="29">
       <dia>29</dia>
       <valor>10299.6761</valor>
-    </row>
-    <row id="30">
+    </person >
+    <person id="30">
       <dia>30</dia>
       <valor>39874.1073</valor>
-    </row>
-</faturamento>
+    </person >
+</group> 
