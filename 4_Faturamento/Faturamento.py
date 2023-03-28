@@ -11,7 +11,6 @@ Escreva um programa na linguagem que desejar onde calcule o percentual de repres
 from decimal import Decimal
 import re
 
-
 # Dado uma biblioteca de faturamento por estados:
 
 valor_Total = {
@@ -21,14 +20,12 @@ valor_Total = {
     'MG': 29.22988,
     'ES': 27.16548,
     'Outros': 19.84953
-
 }
 
 print('_'*85)
 print('_'*85)
 print('\n Faturamento por estado :\n\n {}\n'.format(valor_Total))
 print('_'*85)
-
 
 # Soma do faturamento por estado e dado o percentual total. 
 
@@ -50,7 +47,6 @@ b = a * 100
 print(f'\n A soma dos faturamento total:  R${receita_float} \n percentualmente: {b:.2f} %')
 print('_'*85)
 print('_'*85)
-
 
 # Determinação percentual do faturamento dentre os estados de uma biblioteca 
 
