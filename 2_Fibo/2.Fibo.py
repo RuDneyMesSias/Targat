@@ -1,109 +1,47 @@
+'''2) Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+
+IMPORTANTE:
+Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+'''
 
 
+print('_'*63)
+print('\n Descubra se um numero pertence ou NÃO a sequencia de Fibonacci: ')
+print('_'*63)
+print('_'*63)
 
-# Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores 
-
-print('_'*30)
-print('Sequência de Fibonacci')
-
-def fib(n):
-
-    a, b = 0, 1
-    while a < n:
-        print(a, end ='-')
-        a, b = b, a + b
-
-lista = {
-    fib(100000)
-}
-
-
-# Informado um número, ele calcule a sequência de Fibonacci
-
+#Entrada de um numero para validar se pertence ou não a sequencia de Fibonacci:
+numero = int(input('Escolha um numero: '))
 print('\n')
-print('_'*30)
-numero = int(input('Quantos termos você quer mostrar? '))
 
-with open('valores_Fibo.txt', 'r',) as arquivo:
-    texto = arquivo.read()
+contador = 0 
 
+arq = open('valores_Fibo.txt', 'r') #Importação de  (valores.txt) da sequencia 
+for linha  in arq:
+    contador = contador + 1
+print('_'*63)
 
-for Fibo in lista:
-    if numero == texto:
+arq = open('valores_Fibo.txt', 'r') #Comparar numero apontado para validar segundo  (valores.txt) validos 
+for linha in arq:
+    linha = linha.rstrip()
+    y = str(numero)
+    if y in linha:
+        if y == linha:
+            print('\n Sim!!!. O numero {} pertence a sequencia de Fibonacci:\n '.format(y))
+            print('_'*63)
+        else:
+            y != linha
+            print('Não!!!. O numero {} NÃO pertence a sequencia de Fibonacci:\n'.format(y))
+            print('_'*63)
+        break
 
+arq.close()
 
-        print('Sim!')
-    else:
-        print('Não!')
+# Expressão da sequencia para validação de calculo dos  (valores.txt)
+Fibo = numero + 1 
+a, b = 0, 1
+while a < Fibo:
+    print(a, end=', ',)
+    a, b = b, a + b 
 
-print(numero)
-print(texto)
-
-
-'''
-i = 0
-
-anterior = 0
-proximo = 1
-
-while(i < numero):
-    if( i <= 1):
-        next = i 
-    else:
-        next = anterior + proximo
-        anterior = proximo
-        proximo = next
-        superior = anterior + proximo
-        proximo = next
-    print(next)
-    i = i + 1
-
-if 10 == lista:
-    print(numero)
-else:
-    print('Não!!')'''
-
-
-
-
-
-
-
-
-'''
-# ele calcule a sequência de Fibonacci. 
-i = 0
-
-anterior = 0
-proximo = 1
-
-while(i < numero):
-    if(i <= 1):
-        next = i 
-    else:
-        next = anterior + proximo
-        anterior = proximo
-        proximo = next
-        superior = anterior + proximo
-    print(i)
-    break
-    
-
-# E retorne uma mensagem avisando se o número informado pertence ou não a sequência.
-
-with open('valores_Fibo.txt', 'r',) as arquivo:
-    texto = arquivo.read()
-print(texto.split('\n'))
-
-
-
-for valor in texto:
-    if numero == next:
-        print('\n Sim! O numero {} pertence a sequencia de fibonacci '.format(numero))
-else:
-    print('\n Não! O numero {} pertence a sequencia de fibonacci '.format(numero))
-
-print('\n O numero anterior de {} é {} e seu proximo numero é {}. '.format(numero, anterior, superior))'''
-
-
-
+print("\n Consultado nos : ", contador, "Termos") # Contador do limite dos termos validados em  (valores.txt)

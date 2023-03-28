@@ -11,7 +11,9 @@ b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Est
 
 #Todo o texto lido em um arquivo dessa forma é uma string, mesmo que composto de dígitos. Se inteiros e números de ponto flutuante estão no texto e precisam ser usados como números, por ex. para um cálculo, eles devem ser convertidos usando-se as conversões int() e float(), respectivamente.
 
+
 from decimal import Decimal
+
 import xml.dom.minidom
 import xml.etree.ElementTree as ET
 
@@ -29,13 +31,10 @@ for x in myroot.findall('person'):
     dia = x.find('dia').text
     valor = x.find('valor').text
 
-
     re = float(valor)
     b = (f'R$ {re:_.2f}')
     cont = (b.replace('_','.').replace(',','.'))
     print('O faturamento do {} foi igual: {}'.format(dia, cont))
-    
-print(max(cont))
 
 soma = 0
 
@@ -47,5 +46,8 @@ for group in valor:
 print('_'*85)
 print('_'*85)
 print('\n Faturamento Total : {}\n'.format(receita))
-print('_'*85)
+
+
+
+
 

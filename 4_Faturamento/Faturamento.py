@@ -40,7 +40,6 @@ for estado in valor_Total.values():
     receita = valor.replace('_','.')
 
     print( receita)
-
 y = re.findall(r'\d+\.\d+', receita)
 receita_float = float(y[0])
 
