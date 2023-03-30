@@ -13,8 +13,8 @@ b) Podem existir dias sem faturamento, como nos finais de semana e feriados. Est
 
 #Todo o texto lido em um arquivo dessa forma é uma string, mesmo que composto de dígitos. Se inteiros e números de ponto flutuante estão no texto e precisam ser usados como números, por ex. para um cálculo, eles devem ser convertidos usando-se as conversões int() e float(), respectivamente.
 
-from decimal import Decimal
 
+import re   
 import xml.dom.minidom
 import xml.etree.ElementTree as ET
 
@@ -25,57 +25,22 @@ print('_'*85)
 print('_'*85)
 print('\n')
 
-contador = []
+contador = 0
 
 for x in myroot.findall('person'):
 
     dia = x.find('dia').text
     valor = x.find('valor').text
+    my_float = float(valor)
+    
+    if my_float >= 1:
+        contador = contador + 1
 
-    resul = float(valor)
-    if resul >= 1:
-        
-        b = (f'R$ {resul:_.2f}')
-        cont = (b.replace('_','.').replace(',','.'))
-        print('O faturamento do {} foi igual: {}'.format(dia, cont))
+        b = (f'R$ {my_float:_.2f}')
+        Faturamento = (b.replace('_','.').replace(',','.'))
 
+        print('\n')
+        print('Faturamento no dia: {} o valor {}'.format(contador, Faturamento))
 
+    print('_'*85)
 
-
-
-
-
-
-
-
-
-'''
-soma = 0
-
-for group in valor:
-    soma = soma + resul
-    valor = f('R$ {soma:_.2f}')
-    receita = float(valor.replace('_','.').replace(',','.'))    
-
-print('_'*85)
-print('_'*85)
-print('\n Faturamento Total : {}\n'.format(receita))
-
-
-'''
-'''
-soma = 0
-
-for group in valor:
-    soma = soma + re
-    if soma >= 1:
-        valor = f'R$ {soma:_.2f}'
-        receita = (valor.replace('_','.').replace(',','.'))
-        print(receita)
-
-
-print('_'*85)
-print('_'*85)
-print('\n Faturamento Total : {}\n'.format(receita))
-
-'''
